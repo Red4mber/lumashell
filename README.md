@@ -1,12 +1,17 @@
 # lumashell
 
+## Authentication
+
+I know it is unfinished and ugly and i should have do a login form, 
+but php sucks, the less i do it, the happier i am.
+
 To authenticate on it you need a cookie set to the values you see in line 3 and 4
-> **And yes**, The cookie shall contain the cleartext of the password, else you just invented PtH on the web, well done but that's not the goal here
+> And **yes**, The cookie shall contain the cleartext of the password,
+> else you just invented PtH on the web, well done, but that's not the goal
+
 you can specify the name of the cookie you want, in case of conflict with whatever other cookie you already have 
-if you have the right cookie, but the hashes don't match, it's print the hash of whatever is in your cookie rn, you'll have to edit the script yourself or type the right password and try again
-
-
-I know it is unfinished and ugly, but php sucks ass, the less i do it, the happier i am.
+if you have the right cookie, but the hashes don't match, it'll print the hash of whatever is the value of your cookie,
+you'll have to either edit the script yourself or type the right password and try again
 
 
 Php reverse shell and web shell, with support for custom functions and multiple backupexec functions if some get disabled.
