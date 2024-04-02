@@ -1,27 +1,23 @@
 # lumashell
 
-It's a PHP reverse shell and web shell, with support for custom functions and multiple backupexec functions if some get disabled.
+This is my PHP reverse shell. There are many like it, but this one is mine.
+
+I made this in an afternoon, so don't expect for it to be the best webshell, but it does the job and has a few nice functionalities, with support for custom functions and multiple backup exec functions if some get disabled.
+
 
 Default exec function uses proc_open so it should be reliable enough.
 I didn't have the time to test it on a windows host, but we'll see later i promise :3
 
-So far it supports only proc_open, exec, passthru, system and shell exec as a way to execute code, but i plan on adding more in the future
+So far it supports only proc_open, exec, passthru, system and shell exec as a way to execute code, maybe I'll add more in the future
 
-## Authentication
-
-I know it is unfinished and ugly and i should have do a login form, 
-but php sucks, the less i do it, the happier i am.
+### Authentication
 
 To authenticate on it you need a cookie set to the values you see in line 3 and 4
 > And **yes**, The cookie shall contain the cleartext of the password,
 > else you just invented pass-the-hash on the web, well done, but that's not the goal
 
-you can specify the name of the cookie you want, in case of conflict with whatever other cookie you already have
-
 if you have the right cookie, but not the right value, it'll print the hash of whatever is the value of your cookie
 you'll have to either edit the script yourself or type the right password and try again
-
-also I know the auth with BCRYPT is overkill but better safe than sorry
 
 
 ### TODO - Heres a list of everything it doesn't yet do
